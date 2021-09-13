@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ταινίες</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<script type="text/javascript" src="index.js"></script>	
+</head>
+<body>
+
+	<div id="page_loader">
+		<img src="images/loading_white.gif"  style="position:absolute;z-index:999999;left:45%;top:45%">
+	</div>
+	
+	<div class="heading_image">
+		<img src="images/pexels-lucas-pezeta-2398354.jpg">
+	</div>
+	
+	<div class="container">
+		<form id="search_movies">
+			<h2>Αναζήτηση ταινίας προς αξιολόγηση</h2>
+			<input type="text" id="search_movie_title" name="movie_element" placeholder="Αναζήτηση ταινίας..."> 
+			<button type="button" id="cancel_search" class="button">Ακύρωση αναζήτησης</button>
+			<br>
+			<ul id="movies_list"></ul>
+		</form>
+	</div>
+
+	<div class="container">
+		<h2>Οι ταινίες μου</h2>
+		<div id="my_movies"></div>
+	</div>
+
+	<div class="container">
+		<h2>Άλλες προτάσεις χρηστών που βασίζονται στις ταινίες μου με παρόμοια βαθμολογία</h2>
+		<div id="movies_suggestions"></div>
+	</div>
+
+	<div class="container">
+		<button type="button" id="cancel_all" class="button">Εκκαθάριση Ιστορικού</button>
+	</div>
+
+</body>
+</html>
